@@ -20,32 +20,36 @@ public class NewTabs {
         String googleHandle=driver.getWindowHandle();
 
         //NEW WITH SELENIUM 4- opening a new TAB and going to linkedin
-        WebDriver tab2 = driver.switchTo().newWindow(WindowType.TAB);
-        tab2.get("https://www.linkedin.com");
-        System.out.println(tab2.getTitle());
+//        WebDriver tab2 = driver.switchTo().newWindow(WindowType.TAB);
+//        tab2.get("https://www.linkedin.com");
+        driver.switchTo().newWindow(WindowType.TAB);
+        driver.get("https://www.linkedin.com");
+        System.out.println(driver.getTitle());
         String linkedinHandle=driver.getWindowHandle();
 
         //NEW WITH SELENIUM 4- opening a new TAB and going to amazon
-        WebDriver tab3 = driver.switchTo().newWindow(WindowType.TAB);
-        tab2.get("https://www.amazon.com");
-        System.out.println(tab3.getTitle());
+//        WebDriver tab3 = driver.switchTo().newWindow(WindowType.TAB);
+//        tab2.get("https://www.amazon.com");
+        driver.switchTo().newWindow(WindowType.TAB);
+        driver.get("https://www.amazon.com");
+        System.out.println(driver.getTitle());
         String amazonHandle=driver.getWindowHandle();
 
         //switching between the tabs
-        Thread.sleep(5000);
+        Thread.sleep(2000);
         driver.switchTo().window(linkedinHandle);
-        System.out.println("LINKEDIN : "+tab2.getCurrentUrl());
-        Assert.assertTrue(tab2.getCurrentUrl().contains("linkedin"));
+        System.out.println("LINKEDIN : "+driver.getCurrentUrl());
+        Assert.assertTrue(driver.getCurrentUrl().contains("linkedin"));
 
-        Thread.sleep(5000);
+        Thread.sleep(2000);
         driver.switchTo().window(googleHandle);
         System.out.println("GOOGLE : "+driver.getCurrentUrl());
         Assert.assertTrue(driver.getCurrentUrl().contains("google"));
 
-        Thread.sleep(5000);
+        Thread.sleep(2000);
         driver.switchTo().window(amazonHandle);
-        System.out.println("AMAZON : "+tab3.getCurrentUrl());
-        Assert.assertTrue(tab3.getCurrentUrl().contains("amazon"));
+        System.out.println("AMAZON : "+driver.getCurrentUrl());
+        Assert.assertTrue(driver.getCurrentUrl().contains("amazon"));
 
     }
 }

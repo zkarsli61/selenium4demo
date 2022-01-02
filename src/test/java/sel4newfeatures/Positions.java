@@ -18,7 +18,7 @@ public class Positions {
         driver.manage().window().maximize();
 
         //getting the logo element
-        WebElement logo = driver.findElement (By.xpath("//img[@id='hplogo']"));
+        WebElement logo = driver.findElement (By.xpath("//img[@alt='Google']"));
         //getting the height of the logo
         System.out.println("Height of logo => "+logo.getRect().getDimension().getHeight());
         //getting the  width of the logo

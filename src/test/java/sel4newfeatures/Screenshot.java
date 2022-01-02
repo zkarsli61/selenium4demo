@@ -8,6 +8,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.io.File;
 import java.io.IOException;
@@ -17,14 +18,17 @@ public class Screenshot {
     public void getScreenShotTest() throws IOException {
         //Creating selenium driver
         WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
+        // change language to US
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--lang=en-au");
+        WebDriver driver = new ChromeDriver(options);
         //Going to the google page
         driver.get("https://www.google.com");
         //Maximizing the window
         driver.manage().window().maximize();
 
         //Getting the image of the google logo and saving it
-        WebElement logo = driver.findElement (By.xpath("//img[@id='hplogo']"));
+        WebElement logo = driver.findElement (By.xpath("//img[@alt='Google']"));
         File logoFile = logo.getScreenshotAs(OutputType.FILE);
         File logoDestFile =new File("logo.png");
         FileUtils.copyFile(logoFile,logoDestFile);
