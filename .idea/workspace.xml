@@ -5,20 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2bf40022-7a1d-44cc-a237-a03065016325" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/techproeducation/Events.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Selenium4-Demo.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signInButton.png" beforeDir="false" afterPath="$PROJECT_DIR$/signInButton.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/sel4newfeatures/NewTabs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sel4newfeatures/NewTabs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/sel4newfeatures/Positions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sel4newfeatures/Positions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/sel4newfeatures/RelativeLocatorsClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sel4newfeatures/RelativeLocatorsClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/sel4newfeatures/Screenshot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sel4newfeatures/Screenshot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/sel4newfeatures/ActionsClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/sel4newfeatures/NewTabs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/sel4newfeatures/NewWindows.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/sel4newfeatures/Positions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/sel4newfeatures/RelativeLocatorsClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/sel4newfeatures/Screenshot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,34 +44,35 @@
       <recent name="$PROJECT_DIR$/drivers" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RelativeLocatorsClass.relativeLocatorsTest2">
-    <configuration name="NewTabs.newTabsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Events.test">
+    <configuration name="Events.events" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenium4-Demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sel4newfeatures.*" />
+          <option name="PATTERN" value="techproeducation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="sel4newfeatures" />
-      <option name="MAIN_CLASS_NAME" value="sel4newfeatures.NewTabs" />
-      <option name="METHOD_NAME" value="newTabsTest" />
+      <option name="PACKAGE_NAME" value="techproeducation" />
+      <option name="MAIN_CLASS_NAME" value="techproeducation.Events" />
+      <option name="METHOD_NAME" value="events" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NewWindows" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Events.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Selenium4-Demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sel4newfeatures.*" />
+          <option name="PATTERN" value="techproeducation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="sel4newfeatures" />
-      <option name="MAIN_CLASS_NAME" value="sel4newfeatures.NewWindows" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="techproeducation" />
+      <option name="MAIN_CLASS_NAME" value="techproeducation.Events" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -136,11 +127,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Events.test" />
+        <item itemvalue="JUnit.Events.events" />
         <item itemvalue="JUnit.RelativeLocatorsClass.relativeLocatorsTest2" />
         <item itemvalue="JUnit.RelativeLocatorsClass.relativeLocatorsTest1" />
         <item itemvalue="JUnit.Positions.positionsTest" />
-        <item itemvalue="JUnit.NewWindows" />
-        <item itemvalue="JUnit.NewTabs.newTabsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -165,5 +156,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
